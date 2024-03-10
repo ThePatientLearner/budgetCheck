@@ -1,22 +1,28 @@
 
 <div class="ExpendituresClass align-items-center justify-content-around">
     <div class="row justify-content-center mt-2">
-        <div id="Expenditures" class="d-flex align-items-center col-9">
+        <div id="Expenditures" class="d-flex  justify-content-center align-items-center col-9">
             <h6 class="text-white mr-3">Balance restante:</h6>
-            <h2 id="initialBalance" [style.color]="main.balanceColor">{{ main.getInitialBalance() }} €</h2>
+            <h2 id="initialBalance" [style.color]="main.balanceColor">{{ main.getInitialBalance() }} € </h2>       
         </div>
     </div>
 
 
     <div class="row justify-content-center">
-        <div class="col-12 d-flex justify-content-between align-items-center">
+        <div class="col-sm-10 d-flex justify-content-between align-items-center">
             <input type="number" class="form-control" #amountInput> <!-- Agrega un margen a la derecha (mr-2) -->
             <button class="btn btn-sm btn-danger" (click)="main.changeBalance(amountInput.value)">Enviar Gasto</button>
         </div>
     </div>
+    <div class="row mt-3 d-flex justify-content-center">
+        <div class="col-sm-6">
+           
+        </div>
+    </div>
     <div class="row mt-3">
-        <div class="col-sm-4 d-flex justify-content-end mb-4">
+        <div class="col-sm-4 col-ls-8 d-flex mb-4 justify-content-around">
             <button class="btn btn-sm btn-primary" (click)="main.resetBudget()">Reset</button>
+            <h3 id="dayBudget" class="bg-danger-subtle text-black p-1 rounded mt-2">Presupuesto diario: {{main.dailyBudget()}}  €</h3>
         </div>
     </div>
 </div>

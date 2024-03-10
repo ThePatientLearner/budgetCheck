@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Main } from '../classes/main';
+import { MainService } from '../classes/main.service';
 
 
 @Component({
@@ -11,7 +12,8 @@ import { Main } from '../classes/main';
 })
 export class ExpendituresComponent {
   
-    main : Main = new Main();
+    main : MainService = new MainService();
+mainInstance: any;
 }
 
 

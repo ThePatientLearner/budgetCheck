@@ -1,0 +1,23 @@
+<div class="ExpendituresClass align-items-center justify-content-center">
+    <div class="row mt-2">
+        <div id="Expenditures" class="d-flex  justify-content-center align-items-center col-9">
+            <h6 class="text-white mr-3">Presupuesto mensual: {{main.getBudget()}} €</h6>      
+        </div>
+    </div>
+
+
+    <div class="row justify-content-center">
+        <div class="col-sm-10 d-flex justify-content-between align-items-center">
+            <input type="number" class="form-control" #amountInput> <!-- Agrega un margen a la derecha (mr-2) -->
+            <button class="btn btn-sm btn-danger" (click)="main.setBudget(amountInput.value)">Nuevo límite</button>
+        </div>
+    </div>
+    <div class="row mt-3 d-flex justify-content-center">
+        <div class="col-sm-6">
+           
+        </div>
+    </div>
+    
+</div>
+    
+    
