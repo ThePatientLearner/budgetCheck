@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeadNavComponent } from './head-nav/head-nav.component';
+import { Main } from './classes/main';
 
 @Component({
   selector: 'app-root',
@@ -11,4 +12,8 @@ import { HeadNavComponent } from './head-nav/head-nav.component';
 })
 export class AppComponent {
   title = 'budgetCheck';
+ 
+
+  
 }
+

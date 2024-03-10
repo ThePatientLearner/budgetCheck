@@ -16,7 +16,24 @@ body, html {
     padding-top: 2%;
 }
 
+#Expenditures{
+    color: white;
+    text-align: center;
+}
 
+#initialBalance{
+    margin-top: 3%;
+    
+    
+}
 
+.mr-3{
+    padding-top: 8px;
+    margin-right: 10px;
+}
+
+.form-control{
+    margin-right: 5%;
+}
 
 
