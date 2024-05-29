@@ -42,3 +42,21 @@ body, html {
 }
 
 
+/* styles.css */
+
+.stock-border {
+    margin: 0.5rem; /* equivale a m-2 */
+  }
+  
+  .stock-border:first-child {
+    border-top: 1px solid white;
+  }
+  
+  .stock-border:not(:last-child) {
+    border-bottom: 1px solid white;
+  }
+  
+#price{
+    color: #25f899;
+}  
+  
