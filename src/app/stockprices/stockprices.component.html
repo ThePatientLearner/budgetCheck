@@ -1,14 +1,13 @@
 <!-- src/app/seguimiento-gastos/seguimiento-gastos.component.html -->
 <div class="mt-4">
-    <h3 class="stock text-white text-center m-2 border-bottom border-white">Jd.com: &nbsp;&nbsp;&nbsp; <span id="price" >{{ stockPrices['JD']?.c }} $</span></h3>
-    <h3 class="stock text-white text-center m-2 border-bottom border-white">Tesla: &nbsp;&nbsp;&nbsp; <span id="price" >{{ stockPrices['TSLA']?.c }} $</span></h3>
-    <h3 class="stock text-white text-center m-2 border-bottom border-white">Bitcoin: &nbsp;&nbsp;&nbsp; <span id="price" >{{ stockPrices['BTCUSD']?.c }} $</span></h3>
-    <h3 class="stock text-white text-center m-2 border-bottom border-white">Gold: &nbsp;&nbsp;&nbsp; <span id="price" >{{ stockPrices['GOLD']?.c }} $</span></h3>
-    <h3 class="stock text-white text-center m-2 border-bottom border-white">Nvidia:&nbsp;&nbsp;&nbsp; <span id="price" >{{ stockPrices['NVDA']?.c }} $</span></h3>
-    <h3 class="stock text-white text-center m-2 border-bottom border-white">Apple:&nbsp;&nbsp;&nbsp; <span id="price" >{{ stockPrices['AAPL']?.c }} $</span></h3>
-    <h3 class="stock text-white text-center m-2 border-bottom border-white">Sp500: &nbsp;&nbsp;&nbsp; <span id="price" >{{ stockPrices['SPY']?.c }} $</span></h3>
-    <h3 class="stock text-white text-center m-2 border-bottom border-white">Nasdaq:&nbsp;&nbsp;&nbsp; <span id="price" >{{ stockPrices['QQQ']?.c }} $</span></h3>
-    <h3 class="stock text-white text-center m-2 border-bottom border-white">Eur/Usd:&nbsp;&nbsp;&nbsp; <span id="price" >{{ stockPrices['EURUSD']?.c }} $</span></h3>
+    <h3 class="stock text-white text-center m-2 border-bottom border-white pb-2">Jd.com: &nbsp;&nbsp;&nbsp; <span id="price" >{{ stockPrices['JD']?.c }} $</span></h3>
+    <h3 class="stock text-white text-center m-2 border-bottom border-white pb-2">Tesla: &nbsp;&nbsp;&nbsp; <span id="price" >{{ stockPrices['TSLA']?.c }} $</span></h3>
+    <h3 class="stock text-white text-center m-2 border-bottom border-white pb-2">Bitcoin: &nbsp;&nbsp;&nbsp; <span id="price" >{{  (stockPrices['GBTC']?.c * 1127.5).toFixed(0)}} $</span></h3>
+    <h3 class="stock text-white text-center m-2 border-bottom border-white pb-2">Gold : &nbsp;&nbsp;&nbsp; <span id="price" >{{ (stockPrices['GLD']?.c  * 10.8).toFixed(0) }} $</span></h3>
+    <h3 class="stock text-white text-center m-2 border-bottom border-white pb-2">Nvidia:&nbsp;&nbsp;&nbsp; <span id="price" >{{ stockPrices['NVDA']?.c }} $</span></h3>
+    <h3 class="stock text-white text-center m-2 border-bottom border-white pb-2">Apple:&nbsp;&nbsp;&nbsp; <span id="price" >{{ stockPrices['AAPL']?.c }} $</span></h3>
+    <h3 class="stock text-white text-center m-2 border-bottom border-white pb-2">Sp500: &nbsp;&nbsp;&nbsp; <span id="price" >{{ stockPrices['SPY']?.c }} $</span></h3>
+    <h3 class="stock text-white text-center m-2 border-bottom border-white pb-2">Nasdaq:&nbsp;&nbsp;&nbsp; <span id="price" >{{ stockPrices['QQQ']?.c }} $</span></h3>
 
   </div>
   
